@@ -5,7 +5,7 @@ class Tetris
         this.element = element;
         this.canvas = element.querySelector('canvas');
         this.context = this.canvas.getContext('2d');
-        this.context.scale(25, 25);
+        this.context.scale(20, 20);
 
         this.arena = new Arena(12,20) /* creates a grid of the width and height from index.html divided by scale */
         console.log(this.arena); console.table(this.arena);
@@ -27,12 +27,12 @@ class Tetris
         
         this.colours = [ //changed colours to official tetris block colours (still kept the others in comment)
         null,
-        "#f30bf7", // T
-        "#7f16d2", // O
-        '#38ecf3', // I
-        '#f579ff', // S
-        '#097279', // Z
-        '#F32d75', // L
+        "#800080", // T
+        "#ffff00", // O
+        '#00ffff', // I
+        '#00ff00', // S
+        '#ff0000', // Z
+        '#ff7f00', // L
         '#0000ff', // J
         '#3f3f3f', // ghost
     
