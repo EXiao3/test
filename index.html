@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <template id = "playerTemplate">
     <div class = "player">
             <h1>TETRIS</h1>
@@ -12,11 +11,14 @@
         <canvas class="tetris" width="300" height="500"></canvas> <!-- this is what we use to make the grid -->
     </div>
     </template>
-    <script src="Arena.js"></script>  <!--includes the javascript code for arena class   -->
-    <script src="Player.js"></script>  <!--includes the javascript code for player class--> 
-    <script src="Tetris.js"></script>  <!--includes the javascript code for Tetris Class--> 
-    <script src="Ghost.js"></script>  <!--includes the javascript code for Tetris Class -->
-    <script src="main.js"></script>  <!--includes the javascript code -->
+    
+    <script src="client/ConnectionManager.js"></script>
+    <script src="client/TetrisManager.js"></script> <!--includes the javascript code for Tetris Manager Class-->
+    <script src="client/Arena.js"></script>  <!--includes the javascript code for arena class   -->
+    <script src="client/Player.js"></script>  <!--includes the javascript code for player class--> 
+    <script src="client/Tetris.js"></script>  <!--includes the javascript code for Tetris Class--> 
+    <script src="client/Ghost.js"></script>  <!--includes the javascript code for Tetris Class -->
+    <script src="client/main.js"></script>  <!--includes the javascript code -->
 
     
 </body>
