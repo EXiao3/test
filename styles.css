@@ -1,0 +1,76 @@
+body {
+    background: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #202028;
+    display: flex;
+    color: #fff;
+    font-family: 'scoreFont';
+    font-size: 2em;
+    text-align: center;
+    height: fit-content;
+    
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.player {
+    flex: 1 1 auto;
+}
+
+.player.local canvas{
+    flex: 1;
+    border: .2em solid #ffffff;
+    height: fit-content;
+    max-width: 250px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, rgb(51, 51, 254), rgb(221, 61, 232));
+    padding: 3px;
+    border-radius: 10px;
+}
+
+canvas {
+    flex: 1;
+    border: .2em solid grey;
+    height: fit-content;
+    width: fit-content;
+}
+
+#score {
+    display: inline-block;
+    font-weight: bold;
+    background-color: rgb(47, 47, 47);
+    padding: 5px;
+    width: 100px;
+    font-size: 40px;
+    margin: auto;
+}
+
+.bar > button {
+    flex: 1;
+    display: inline-block;
+    background-color: #4CAF50;
+    background-image: url("pause-button.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+h3 {
+    display: inline-block;
+    padding: 5px;
+  }
+
+@font-face {
+    font-family: 'scoreFont'; /*a name to be used later*/
+    src: url('scoreFont.ttf'); /*URL to font*/
+}
