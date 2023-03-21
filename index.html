@@ -6,15 +6,17 @@
 <body>
     <template id = "playerTemplate">
     <div class = "player">
-            <div class = "score"></div>
-        <canvas class="tetris" width="240" height="400"></canvas> <!-- this is what we use to make the grid -->
+        <div class = "score"></div>
+            <h1>QUARTRIS</h1>
+        <canvas class="tetris" width="300" height="500"></canvas> <!-- this is what we use to make the grid -->
+        <div>
+            <object data="http://3.10.16.82/hs.txt" width="300" height="200">
+                Not supported
+            </object>
+        </div>
     </div>
     </template>
 
-    <header>
-        <h1>TETRIS</h1>
-    </header>
-    
     <script src="client/ConnectionManager.js"></script>
     <script src="client/TetrisManager.js"></script> <!--includes the javascript code for Tetris Manager Class-->
     <script src="client/Arena.js"></script>  <!--includes the javascript code for arena class   -->
@@ -23,6 +25,5 @@
     <script src="client/Ghost.js"></script>  <!--includes the javascript code for Tetris Class -->
     <script src="client/main.js"></script>  <!--includes the javascript code -->
 
-    
 </body>
 </html>
