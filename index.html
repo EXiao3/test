@@ -1,42 +1,46 @@
 <html>
-<head>  
+<head>
     <title>Tetris</title>
-    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            background: #000;
+            display: flex;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .player {
+            flex: 1 1 auto;
+        }
+
+        .player.local canvas {
+            border-color: #fff;
+        }
+
+        canvas {
+            border: solid .2em #707070;
+            height: 80vh;
+        }
+    </style>
 </head>
 <body>
-    
-
-
-    <div class = "player">
-        <div class = "bar">
-            <body>PLAYER 1</body>
-            <button pause></button>
-            <div class = "score"></div>
+    <template id="player-template">
+        <div class="player">
+            <div class="score"></div>
+            <canvas class="tetris" width="240" height="400"></canvas>
         </div>
-        <canvas class="tetris" width="240" height="400"></canvas> <!-- this is what we use to make the grid -->
-    </div>
-    <div class = "middle">
-        <h1>TETRIS</h1>
-        <div class = "leaderboard"> 
-            <section> leaderboard </section>
-            <body class = "board">  
-            <section> score </section> <section> date </section>
-        </div>
-    </div>
-    <div class = "player">
-        <div class = "bar">
-            <body>PLAYER 2</body>
-            <button pause></button>
-            <div class = "score"></div>
-        </div>
-        <canvas class="tetris" width="240" height="400"></canvas> <!-- this is what we use to make the grid -->
-    </div>
+    </template>
 
-    <script src="/Arena.js"></script>  <!--includes the javascript code for arena class   -->
-    <script src="/Player.js"></script>  <!--includes the javascript code for player class--> 
-    <script src="/Tetris.js"></script>  <!--includes the javascript code for Tetris Class--> 
-    <script src="/Ghost.js"></script>  <!--includes the javascript code for Tetris Class -->
-    <script src="/main.js"></script>  <!--includes the javascript code -->
-    
+    <script src="client/connection-manager.js"></script>
+    <script src="client/tetris-manager.js"></script>
+
+    <script src="client/events.js"></script>
+    <script src="client/arena.js"></script>
+    <script src="client/player.js"></script>
+    <script src="client/tetris.js"></script>
+    <script src="client/ghost.js"></script>
+    <script src="client/main.js"></script>
 </body>
 </html>
